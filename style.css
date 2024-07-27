@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #964747bc;
+    font-family: 'Arial', sans-serif;
+}
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+}
+.cell{
+    width: 70px;
+    height: 70px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+
+.cell.x {
+    color: #ff0000;
+}
+
+.cell.o {
+    color: #0000ff;
+}
+
+.winning-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.winning-message.show {
+    display: flex;
+}
+
+#restartButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 2px rgba(29, 30, 31, 0.61) ;
+}
